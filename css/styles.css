@@ -4,6 +4,27 @@ body {
     background-color: #FFFFFF;
 }
 
+.container {
+    max-width: 100%;
+width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 2px solid red;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
+
 :root {
     --slate: #434455;
     --navyblue: #2E2F42;
@@ -33,6 +54,12 @@ body {
 
 /*  Header  */
 
+.header {
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-nav-logo {
     color: var(--iris);
 font-size: 18px;
@@ -45,10 +72,22 @@ text-transform: uppercase;
 .logo-acc {
     color: var(--navyblue);
 }
+
+.container-flex {
+    display: flex;
+    align-items: center;
+   
+}
 .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+    justify-content: space-between;
 }
 .header-list {
- 
+ display: flex;
+ align-items: center;
+ gap: 40px;
 }
 .header-list-item {
 }
@@ -68,7 +107,15 @@ color: var(--ocean)
 
 .header-address {
     color: var(--slate, #434455);
-    font-style: normal
+    font-style: normal;
+    margin-left: auto;
+}
+
+.header-address-list {
+    
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .header-address-link {
 color: var(--slate);
@@ -85,7 +132,7 @@ color: var(--ocean);
 /* Hero */
 
 .hero {
-    background-color: var(--navyblue, #2E2F42);
+    
 }
 .hero-title {
     color: var(--white, #FFFFFF);
@@ -95,7 +142,14 @@ font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
+
 }
+
+.hero-flex{
+    max-width: 100%;
+    background-color: var(--navyblue);
+}
+
 .hero-btn {
     color: var(--white, #FFFFFF);
     background-color: var(--iris, #4D5AE5);

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +14,9 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="header-nav">
+    <header class="header">
+      <div class="container container-flex">
+        <nav class="header-nav">
         <a class="header-nav-logo link" href="./index.html">Web<span class="logo-acc">Studio</span></a>
         <ul class="header-list list">
           <li class="header-list-item"><a class="header-list-link link" href="./index.html">Studio</a></li>
@@ -32,13 +34,16 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
     <main>
 
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <div class="container hero-flex">
+        <h1 class="hero-title">Effective Solutions<br/>for Your Business</h1>
         <button type="button" class="hero-btn">Order Service</button>
+      </div>
       </section>
 
       <!-- Strategy -->
